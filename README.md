@@ -6,7 +6,7 @@
 
  date    : 2024/09/12
 
- update :
+ update : 2024/09/14
 
 ***
 
@@ -26,6 +26,7 @@ bun run dev
 ***
 ### blog
 
+* https://knakatech-blog.pages.dev/posts/153
 
 ***
 # License
