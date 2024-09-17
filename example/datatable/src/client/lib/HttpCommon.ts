@@ -11,7 +11,6 @@ const HttpCommon = {
   post: async function(item: any, path: string): Promise<any>
   {
     try {
-//console.log("v=", v); external_api_key
 //console.log("path=", path);
       let url = ""; 
       const body: any = JSON.stringify(item);		
@@ -21,6 +20,7 @@ const HttpCommon = {
         body: body
       });
       const json = await res.json()
+      //console.log(json);
       return json;
     } catch (e) {
       console.error(e);

@@ -1,6 +1,8 @@
 import fs from 'node:fs/promises'
 import express from "express";
-
+//
+import commonRouter from './routes/commonRouter';
+//
 const app = express();
 //
 app.use(express.json());
@@ -9,6 +11,10 @@ app.use(express.static('dist'));
 console.log("env=", process.env.NODE_ENV);
 //
 const errorObj = {ret: "NG", messase: "Error"};
+/* API */
+// route
+app.use('/api/common', commonRouter);
+
 //
 app.get("/*", async(req, res) => {
   let htm = await fs.readFile('./dist/index.html', 'utf-8');

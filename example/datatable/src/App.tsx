@@ -21,6 +21,9 @@ import Sheet from './client/Sheet';
 import Switch from './client/Switch';
 import Table from './client/Table';
 import TextArea from './client/TextArea';
+import Test1 from './client/Test1';
+import Test2 from './client/Test2';
+
 //
 export default function App(){
     return(
@@ -28,25 +31,9 @@ export default function App(){
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/alert_dialog" element={<AlertDialog />} />
-        <Route path="/button" element={<Button />} />
-        <Route path="/card" element={<Card />} />
-        <Route path="/calendar" element={<Calendar />} />
-        <Route path="/checkbox" element={<CheckBox />} />
         <Route path="/datatable" element={<DataTable />} />
-        <Route path="/datepicker" element={<DatePicker />} />
-        <Route path="/dialog" element={<Dialog />} />
-        <Route path="/form" element={<Form />} />
-        <Route path="/input" element={<Input />} />
-        <Route path="/navigation_menu" element={<NavigationMenu />} />
-        <Route path="/progress" element={<Progress />} />
-        <Route path="/radio" element={<Radio />} />
-        <Route path="/select" element={<Select />} />
-        <Route path="/sheet" element={<Sheet />} />
-        <Route path="/switch" element={<Switch />} />
-        <Route path="/table" element={<Table />} />
-        <Route path="/textarea" element={<TextArea />} />
-        
+        <Route path="/test1" element={<Test1 />} />
+        <Route path="/test2" element={<Test2 />} />
       </Routes>
     </div>
     )
