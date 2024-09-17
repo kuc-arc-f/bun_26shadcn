@@ -25,6 +25,8 @@ bun run dev
 ***
 ### blog
 
+https://knakatech-blog.pages.dev/posts/158
+
 ***
 # License
 
