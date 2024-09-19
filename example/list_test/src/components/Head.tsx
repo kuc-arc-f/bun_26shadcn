@@ -6,8 +6,6 @@ function Page() {
     <div>
         <a href="/">[ Home ]</a>
         <a href="/about" className="ms-2">&nbsp; [ about ]</a>
-        <a href="/data_table_test1" className="ms-2"> [ dataTableTest1 ]</a>
-        <a href="/data_table_test2" className="ms-2"> [ dataTableTest2 ]</a>
         <a href="/list_test" className="ms-2"> [ ListTest ]</a>
         <hr />
     </div>
@@ -15,5 +13,6 @@ function Page() {
 }
 export default Page;
 /*
-<a href="/sheet4" className="ms-2"> [ sheet4 ]</a>
+<a href="/data_table_test1" className="ms-2"> [ dataTableTest1 ]</a>
+<a href="/data_table_test2" className="ms-2"> [ dataTableTest2 ]</a>
 */
