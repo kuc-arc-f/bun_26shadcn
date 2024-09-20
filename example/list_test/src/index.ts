@@ -20,6 +20,7 @@ app.use('/api/common', commonRouter);
 app.post("/api/table/get_list", async(req, res) => {
   try {
     const items = tableData.getList();
+console.log(items);
     return res.json(items);
   } catch (error) {
     console.error(error);

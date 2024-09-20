@@ -19,8 +19,10 @@ console.log(body);
       if(Number(statNum) === 0){
         stat  = "failed";
       }
+      const now = new Date().getTime();
       let row = {
-        id: String(this.items.length + 1),
+        //id: String(this.items.length + 1),
+        id: String(now),
         amount: Number(body.amount),
         status: stat,
         email: body.email,
@@ -54,6 +56,9 @@ console.log(body);
   */ 
   addList: function(){
     try {
+      const now = new Date().getTime();
+      const tmArray = [now, now + 10, now + 20]
+      //console.log(tmArray);
       const maxNum = 3;
       for (let i = 1; i <= maxNum; i++){
         let rNum = Math.floor(Math.random() * 10000);
@@ -63,8 +68,12 @@ console.log(body);
         if(Number(statNum) === 0){
           stat  = "failed";
         }
+        let targetId = 0;
+        if(tmArray[i-1]) {
+          targetId = tmArray[i-1];
+        }
         let row = {
-          id: String(i),
+          id: String(targetId),
           amount: Number(rNum),
           status: stat,
           email: `testname-${String(rNum)}@test.com`,
