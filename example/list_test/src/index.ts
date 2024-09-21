@@ -49,7 +49,29 @@ app.post("/api/table/delete", async(req: any, res: any) => {
     res.sendStatus(500);
   }
 });
-//router.post('/test', async function(req: any, res: any) {
+app.post("/api/table/update", async(req: any, res: any) => {
+  try {
+    console.log(req.body);
+    const items = tableData.update(req.body);
+//console.log(items);
+    return res.json(items);
+  } catch (error) {
+    console.error(error);
+    res.sendStatus(500);
+  }
+});
+
+app.post("/api/table/get", async(req: any, res: any) => {
+  try {
+    console.log(req.body);
+    const items = await tableData.getItem(req.body);
+console.log(items);
+    return res.json(items);
+  } catch (error) {
+    console.error(error);
+    res.sendStatus(500);
+  }
+});
 //
 app.get("/*", async(req, res) => {
   let htm = await fs.readFile('./dist/index.html', 'utf-8');

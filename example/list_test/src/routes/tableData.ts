@@ -114,6 +114,63 @@ console.log(this.items);
       throw new Error("error, delete");
     }
   },
+  /**
+  * 
+  * @param
+  *
+  * @return
+  */ 
+  getItem: function(body: any){
+    try {
+      let ret = {};
+      if(body) {
+console.log("id=", body.id);
+        const result = this.items.filter((item) => Number(item.id) === body.id);
+console.log(result);
+        if(result.length > 0){
+          ret = result[0];
+        }
+//console.log(this.items);
+        return ret;
+      }
+      throw new Error("error, nothig body");
+    } catch (error) {
+      console.error(error);
+      throw new Error("error, getItem");
+    }
+  },
+  /**
+  * 
+  * @param
+  *
+  * @return
+  */  
+  update: function(body: any){
+    //console.log("#update");
+    try {
+      if(body) {
+        //console.log(body);
+        //console.log("id=", body.id);
+        const out: any[] = [];
+        this.items.forEach((item) => {
+          //console.log(item)
+          if(Number(item.id) === body.id){
+            item.amount = Number(body.amount);
+            out.push(item);
+          }else{
+            out.push(item);
+          }
+        });
+        this.items = out;
+//console.log(out);
+        return this.items;
+      }
+      throw new Error("error, nothig body");
+    } catch (error) {
+      console.error(error);
+      throw new Error("error, update");
+    }
+  },
 }
 
 export default tableData;

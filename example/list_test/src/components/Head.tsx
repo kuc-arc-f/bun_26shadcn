@@ -7,6 +7,7 @@ function Page() {
         <a href="/">[ Home ]</a>
         <a href="/about" className="ms-2">&nbsp; [ about ]</a>
         <a href="/list_test" className="ms-2"> [ ListTest ]</a>
+        <a href="/list_test2" className="ms-2"> [ ListTest2 ]</a>
         <hr />
     </div>
     );
