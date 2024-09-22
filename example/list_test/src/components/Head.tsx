@@ -12,12 +12,11 @@ function Page() {
         <a href="/list_test" className="ms-2"> [ ListTest ]</a>
         <a href="/list_test2" className="ms-2"> [ ListTest2 ]</a>
         <a href="/list_test6" className="ms-2"> [ ListTest6 ]</a>
+        <a href="/todo" className="ms-2"> [ Todo ]</a>
         <hr />
     </div>
     );
 }
 export default Page;
 /*
-<a href="/list_test4" className="ms-2"> [ ListTest4 ]</a>
-<a href="/list_test5" className="ms-2"> [ ListTest5 ]</a>
 */

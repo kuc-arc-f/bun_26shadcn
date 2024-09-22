@@ -2,6 +2,7 @@ import fs from 'node:fs/promises'
 import express from "express";
 //
 import commonRouter from './routes/commonRouter';
+import todoRouter from './routes/todoRouter';
 import tableData from './routes/tableData';
 //
 const app = express();
@@ -16,6 +17,7 @@ const errorObj = {ret: "NG", messase: "Error"};
 const data = tableData.addList();
 //console.log(data);
 app.use('/api/common', commonRouter);
+app.use('/api/todo', todoRouter);
 //console.log("#api_START");
 app.post("/api/table/get_list", async(req, res) => {
   try {
