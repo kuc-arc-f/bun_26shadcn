@@ -15,6 +15,7 @@ import Form from './client/Form';
 import Input from './client/Input';
 import ListTest from './client/ListTest';
 import ListTest2 from './client/ListTest2';
+import ListTest6 from './client/ListTest6';
 import NavigationMenu from './client/NavigationMenu';
 import Progress from './client/Progress';
 import Radio from './client/Radio';
@@ -45,6 +46,7 @@ export default function App(){
         <Route path="/form" element={<Form />} />
         <Route path="/list_test" element={<ListTest />} />
         <Route path="/list_test2" element={<ListTest2 />} />
+        <Route path="/list_test6" element={<ListTest6 />} />
         <Route path="/input" element={<Input />} />
         <Route path="/navigation_menu" element={<NavigationMenu />} />
         <Route path="/progress" element={<Progress />} />

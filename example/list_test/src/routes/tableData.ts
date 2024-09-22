@@ -125,7 +125,7 @@ console.log(this.items);
       let ret = {};
       if(body) {
 console.log("id=", body.id);
-        const result = this.items.filter((item) => Number(item.id) === body.id);
+        const result = this.items.filter((item) => Number(item.id) === Number(body.id));
 console.log(result);
         if(result.length > 0){
           ret = result[0];

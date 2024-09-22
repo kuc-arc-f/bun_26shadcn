@@ -6,14 +6,18 @@ function Page() {
     <div>
         <a href="/">[ Home ]</a>
         <a href="/about" className="ms-2">&nbsp; [ about ]</a>
+        <a href="/data_table_test1" className="ms-2"> [ dataTableTest1 ]</a>
+        <a href="/data_table_test2" className="ms-2"> [ dataTableTest2 ]</a>
+        <br />
         <a href="/list_test" className="ms-2"> [ ListTest ]</a>
         <a href="/list_test2" className="ms-2"> [ ListTest2 ]</a>
+        <a href="/list_test6" className="ms-2"> [ ListTest6 ]</a>
         <hr />
     </div>
     );
 }
 export default Page;
 /*
-<a href="/data_table_test1" className="ms-2"> [ dataTableTest1 ]</a>
-<a href="/data_table_test2" className="ms-2"> [ dataTableTest2 ]</a>
+<a href="/list_test4" className="ms-2"> [ ListTest4 ]</a>
+<a href="/list_test5" className="ms-2"> [ ListTest5 ]</a>
 */
