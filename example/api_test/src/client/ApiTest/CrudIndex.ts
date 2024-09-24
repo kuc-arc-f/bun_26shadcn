@@ -68,8 +68,10 @@ const CrudIndex = {
   */ 
   getItem:  async function(id: number) {
     try{
+      const path = "/test/get";
       let item  = {
-        id: id
+        id: id,
+        api_url: path,
       }      
       const json = await HttpCommon.post(item, "/api/common/send_post");
       let items = json;

@@ -131,7 +131,6 @@ export default function Page(){
             <DropdownMenuContent align="end">
               <DropdownMenuLabel>Actions</DropdownMenuLabel>
               <DropdownMenuSeparator />
-              {/*
               <DropdownMenuItem
                 onClick={async() => {
                   try{
@@ -147,7 +146,6 @@ export default function Page(){
                 Edit Items
               </DropdownMenuItem>            
               <DropdownMenuSeparator />
-              */}
               <DropdownMenuItem
                 onClick={async() => {
                   if (window.confirm("Delete OK ?")) {
@@ -220,7 +218,9 @@ export default function Page(){
   const openEditDialog = async function(id: number){
     try {
       form1typeCreate = 0;
-      formData = await CrudIndex.getItem(id);
+//      formData = await CrudIndex.getItem(id);
+      const d = await CrudIndex.getItem(id);
+      formData = d.data;
 console.log(formData);
       setUpdatetime(new Date().toString());
       const modalDialog = document.getElementById('confirmDialog');
@@ -252,6 +252,7 @@ console.log(formData);
     const dlg = document.getElementById('confirmDialog');
     const values = ClientUtil.getInputValue("form1"); 
     values.id = form1_id; 
+    values.api_url = "/test/update"; 
     console.log(values);
     data = await CrudIndex.update(values);
     location.reload();
