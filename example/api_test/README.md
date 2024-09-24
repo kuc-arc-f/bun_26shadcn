@@ -30,5 +30,7 @@ VITE_API_URL="http://localhost"
 ***
 ### blog 
 
+https://knakatech-blog.pages.dev/posts/161
+
 ***
 

@@ -150,7 +150,7 @@ console.log(result);
         this.items.forEach((item) => {
           //console.log(item)
           if(Number(item.id) === body.id){
-            item.amount = Number(body.amount);
+            item.context = body.context;
             out.push(item);
           }else{
             out.push(item);

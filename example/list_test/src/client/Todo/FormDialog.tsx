@@ -42,14 +42,14 @@ console.log("type_create=", props.type_create);
           defaultValue={""} className="col-span-3" />  
         ):(
           <Input id="title" name="title"disabled={true}
-          defaultValue={props.formData.email} className="col-span-3" />
+          defaultValue={props.formData.title} className="col-span-3" />
         )} 
       </div>
       <div className="grid grid-cols-4 items-center gap-4 mt-2">
         <Label htmlFor="context" className="text-right">
         context
         </Label>
-        <Input type="text" id="context" name="context" defaultValue={props.formData.amount} 
+        <Input type="text" id="context" name="context" defaultValue={props.formData.context} 
         className="col-span-3" />
       </div>
       <hr className="my-2" />

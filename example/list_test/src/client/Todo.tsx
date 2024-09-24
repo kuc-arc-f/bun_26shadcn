@@ -131,7 +131,6 @@ export default function Page(){
             <DropdownMenuContent align="end">
               <DropdownMenuLabel>Actions</DropdownMenuLabel>
               <DropdownMenuSeparator />
-              {/*
               <DropdownMenuItem
                 onClick={async() => {
                   try{
@@ -147,7 +146,6 @@ export default function Page(){
                 Edit Items
               </DropdownMenuItem>            
               <DropdownMenuSeparator />
-              */}
               <DropdownMenuItem
                 onClick={async() => {
                   if (window.confirm("Delete OK ?")) {

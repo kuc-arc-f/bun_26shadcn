@@ -69,8 +69,7 @@ const CrudIndex = {
       }      
       const json = await HttpCommon.post(item, "/api/todo/get");
       let items = json;
-console.log(json);
-
+      //console.log(json);
       return items;
     } catch (e) {
       console.error(e);
